@@ -18,6 +18,8 @@ const filterPostDate = require("./src/config/postDate");
 const isProduction = configServer.isProduction;
 
 
+
+
 module.exports = function (eleventyConfig) {
     /**=====================================================================
           EXTENSIONS - Recognising non-default languages as templates 
@@ -31,12 +33,14 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addTemplateFormats("css");
     eleventyConfig.addExtension("css", configCss);
 
+
     /**
      *  JS EXTENSION
      *  Sets up JS files as an eleventy template language, which are compiled by esbuild. Allows bundling and minification of JS
      */
     eleventyConfig.addTemplateFormats("js");
     eleventyConfig.addExtension("js", configJs);
+    
     /**=====================================================================
                                 END EXTENSIONS
     =======================================================================*/
@@ -90,6 +94,8 @@ module.exports = function (eleventyConfig) {
     });
     eleventyConfig.addPassthroughCopy("./src/admin");
     eleventyConfig.addPassthroughCopy("./src/_redirects");
+    eleventyConfig.addPassthroughCopy("./src/pdfs");
+    
     /**=====================================================================
                               END PASSTHROUGHS
     =======================================================================*/
@@ -130,6 +136,8 @@ module.exports = function (eleventyConfig) {
     /**=====================================================================
                               END SERVER SETTINGS
     =======================================================================*/
+
+    
 
     return {
         dir: {

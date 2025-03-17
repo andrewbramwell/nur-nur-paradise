@@ -1,7 +1,7 @@
 ---
-title: 'Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/landing.jpg'
+title: 'Nur Nur Paradise | Thai Restaurant| Kenilworth'
+description: 'Experience authentic Thai cuisine at Nur Nur Paradise in Kenilworth. Our family-owned restaurant offers traditional flavours and fusion dishes in a welcoming atmosphere.'
+preloadImg: '/assets/images/hero.webp'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -74,325 +74,395 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-    <section id="hero">
-        <div class="cs-container">
+<section id="hero-1950">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Authentic Thai Fusion Restaurant in Kenilworth</h1>
             <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
-                <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
-                </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17"/>
-                    Get in Touch
-                </a>
+                <p class="cs-text">Fresh ingredients, authentic recipes and a warm, inviting atmosphere await at Nur Nur Paradise.</p>
+                <a href="/" class="cs-button-solid">Book Now</a>
             </div>
         </div>
+    </div>
 
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
-        </picture>
-    </section>
+    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/hero-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
+        <img decoding="async" src="/assets/images/hero.jpg" alt="restaurant" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+                                
 
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                Why Choose Us                 -->
+<!-- ============================================ -->
 
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                <!--Mobile Image -->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets2.jpg" | resize({width: 482, height: 537}) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets2.jpg" | resize({width: 482, height: 537}) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets2.jpg" | resize({width: 482, height: 537}) | jpeg %}" type="image/jpeg">
-                <!--Tablet Image -->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets2.jpg" | resize({width: 731, height: 814}) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets2.jpg" | resize({width: 731, height: 814}) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets2.jpg" | resize({width: 731, height: 814}) | jpeg %}" type="image/jpeg">
-                <!--Desktop Image -->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets2.jpg" | resize({width: 1044, height: 1162}) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets2.jpg" | resize({width: 1044, height: 1162}) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets2.jpg" | resize({width: 1044, height: 1162}) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/cabinets2.jpg" | resize({width: 1044, height: 1162}) | jpeg %}" alt="kitchen cabinets" width="522" height="581" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
+<section id="why-choose-1657">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Why Us</span>
+                <h2 class="cs-title">What Makes Our Thai Restaurant Special</h2>
             </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <span class="cs-number">01</span>
+                    <p class="cs-li-text">
+                        Our talented Thai-born chefs create authentic dishes using traditional techniques passed down through generations, ensuring genuine flavors in every bite.
                     </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img 
-                    class="cs-quote-icon"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                    alt="gavel"
-                    width="136"
-                    height="77"/>
-                </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
-
-    <section id="sbs-r">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
-                </div>
-            </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews">
-        <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-            </p>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
                 </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                <li class="cs-li">
+                    <span class="cs-number">02</span>
+                    <p class="cs-li-text">
+                        We source the freshest local Warwickshire produce alongside premium imported Thai ingredients, creating vibrant dishes that support both quality and sustainability.
                     </p>
-                    <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
+                </li>
+                <li class="cs-li">
+                    <span class="cs-number">03</span>
+                    <p class="cs-li-text">
+                        Family-owned by Lee and Chantana, who personally oversee daily operations, ensuring consistent quality, warm hospitality, and attention to every detail.
+                    </p>
                 </li>
             </ul>
-            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
+        </div>  
+        <div class="cs-wrapper">
+            <picture class="cs-picture">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cashew.jpg" | resize({width: 576, height: 448}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cashew.jpg" | resize({width: 576, height: 448}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cashew.jpg" | resize({width: 576, height: 448}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cashew.jpg" | resize({width: 880, height: 728}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cashew.jpg" | resize({width: 880, height: 728}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cashew.jpg" | resize({width: 880, height: 728}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cashew.jpg" | resize({width: 1260, height: 834}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cashew.jpg" | resize({width: 1260, height: 834}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cashew.jpg" | resize({width: 1260, height: 834}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/cashew.jpg" | resize({width: 1260, height: 834}) | jpeg %}" alt="chicken cashew nut" width="630" height="414" loading="lazy" decoding="async" >
+            </picture>
+            <p class="cs-review">
+                <svg class="cs-quote" preserveAspectRatio="none" viewBox="0 0 100 93" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".4" clip-path="url(#a)" fill="var(--quoteColor)"><path d="M22.94 84H0L18.305.854H55L22.94 84ZM67.94 84H45L63.305.854H100L67.94 84Z"/></g><defs><clipPath id="a-1657"><path fill="#fff" transform="translate(0 .854)" d="M0 0h100v83.146H0z"/></clipPath></defs></svg>
+                Second visit last evening and as before, everything was spot on. Food is super fresh and tasty, portions generous and service excellent.
+            </p>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbsr-1007">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/curry.jpg" | resize({width: 528, height: 474}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/curry.jpg" | resize({width: 528, height: 474}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/curry.jpg" | resize({width: 528, height: 474}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/curry.jpg" | resize({width: 1552, height: 474}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/curry.jpg" | resize({width: 1552, height: 474}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/curry.jpg" | resize({width: 1552, height: 474}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/curry.jpg" | resize({width: 1028, height: 872}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/curry.jpg" | resize({width: 1028, height: 872}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/curry.jpg" | resize({width: 1028, height: 872}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/curry.jpg" | resize({width: 1028, height: 872}) | jpeg %}" alt="tom yum gung" width="522" height="461" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <img class="cs-seal" loading="lazy" decoding="async" src="/assets/svgs/seal.svg" alt="seal" width="190" height="190">
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Our Story</span>
+            <h2 class="cs-title">Bringing Thai Flavours to Warwickshire</h2>
+            <p class="cs-text">
+                Nur Nur Paradise opened in November 2023, bringing authentic Thai fusion cuisine to Kenilworth. We blend traditional Thai flavors with Western influences in our beautifully renovated Warwick Road restaurant, founded by Lee Wongsalees and Chantana Nimcean.
+                <!--Creates the space between p tags on mobile-->
+                <span class="cs-spacer"></span>
+                Originally from Thailand, we chose Kenilworth for its vibrant community spirit and welcoming atmosphere. Our restaurant's name, "Nur Nur," translates as "delicious" in Thai—a promise we fulfill through every carefully crafted dish we serve.
+            </p>
+            <a href="" class="cs-button-solid">Reserve Your Table</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-1396">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Kenilworth Loves Our Thai Cuisine</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <!--Blue Quote-->
+                <img class="cs-quote" aria-hidden="true" src="/assets/svgs/quotes.svg" decoding="async" alt="quote icon" width="120" height="99">
+                <p class="cs-item-text">
+                    Fantastic Birthday Meal. Amazing new restaurant with superb food which was full of flavour. Proper traditional Thai food. Service was great with knowledgeable staff. 
+                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="/assets/svgs/profile.svg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                    </picture>
+                    <span class="cs-name">
+                        Dee T
+                    </span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <!--Blue Quote-->
+                <img class="cs-quote" aria-hidden="true" src="/assets/svgs/quotes.svg" decoding="async" alt="quote icon" width="120" height="99">
+                <p class="cs-item-text">
+                    Excellent service and the food was delicious. I went with two friends and we had something from the mixed lunch menus. We also had pudding which was especially good!
+                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="/assets/svgs/profile-woman.svg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                    </picture>
+                    <span class="cs-name">
+                        B Eds
+                    </span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <!--Blue Quote-->
+                <img class="cs-quote" aria-hidden="true" src="/assets/svgs/quotes.svg" decoding="async" alt="quote icon" width="120" height="99">
+                <p class="cs-item-text">
+                    Amazing restaurant cool decor . best Thai food and mocktails would highly recommend. The staff are so friendly and really good value for money definitely will return. 
+                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="/assets/svgs/profile.svg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                    </picture>
+                    <span class="cs-name">
+                        John Hardwick
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+                                
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery-402">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Dining Ambiance</span>
+            <h2 class="cs-title">Where Thai Flavours Come Alive</h2>
+            <p class="cs-text">
+                Experience the warm, inviting atmosphere of Nur Nur Paradise. Our thoughtfully designed interior blends contemporary comfort with subtle Thai influences, creating the perfect setting for your memorable dining experience.
+            </p>
+        </div>
+        <div class="cs-gallery">
+            <!--Picture 1-->
+            <picture class="cs-image">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 272, height: 272}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 272, height: 272}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 272, height: 272}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 600, height: 600}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 600, height: 600}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 600, height: 600}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 1260, height: 800}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 1260, height: 800}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 1260, height: 800}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/gal-1.jpg" | resize({width: 1260, height: 800}) | jpeg %}" alt="restaurant image" width="630" height="400" loading="lazy" decoding="async" >
+            </picture>
+            <!--Picture 2-->
+            <picture class="cs-image">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 272, height: 272}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 272, height: 272}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 272, height: 272}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 600, height: 600}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 600, height: 600}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 600, height: 600}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 610, height: 800}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 610, height: 800}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 610, height: 800}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 610, height: 800}) | jpeg %}" alt="restaurant image" width="305" height="400" loading="lazy" decoding="async">
+            </picture>
+            <!--Picture 3-->
+             <picture class="cs-image">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 272, height: 272}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 272, height: 272}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 272, height: 272}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 600, height: 600}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 600, height: 600}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 600, height: 600}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 610, height: 800}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 610, height: 800}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 610, height: 800}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/gal-3.jpg" | resize({width: 610, height: 800}) | jpeg %}" alt="restaurant image" width="305" height="400" loading="lazy" decoding="async">
+            </picture>
+            <!--Picture 4-->
+             <picture class="cs-image">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 272, height: 272}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 272, height: 272}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 272, height: 272}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 600, height: 600}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 600, height: 600}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 600, height: 600}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 610, height: 800}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 610, height: 800}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 610, height: 800}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/gal-4.jpg" | resize({width: 610, height: 800}) | jpeg %}" alt="restaurant image" width="305" height="400" loading="lazy" decoding="async">
+            </picture>
+            <!--Picture 5-->
+             <picture class="cs-image">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-5.jpg" | resize({width: 272, height: 272}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-5.jpg" | resize({width: 272, height: 272}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-5.jpg" | resize({width: 272, height: 272}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-5.jpg" | resize({width: 600, height: 600}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-5.jpg" | resize({width: 600, height: 600}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-5.jpg" | resize({width: 600, height: 600}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-5.jpg" | resize({width: 610, height: 800}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-5.jpg" | resize({width: 610, height: 800}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-5.jpg" | resize({width: 610, height: 800}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/gal-5.jpg" | resize({width: 610, height: 800}) | jpeg %}" alt="restaurant image" width="305" height="400" loading="lazy" decoding="async">
+            </picture>
+            <!--Picture 6-->
+            <picture class="cs-image">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-6.jpg" | resize({width: 272, height: 272}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-6.jpg" | resize({width: 272, height: 272}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-6.jpg" | resize({width: 272, height: 272}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-6.jpg" | resize({width: 600, height: 600}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-6.jpg" | resize({width: 600, height: 600}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-6.jpg" | resize({width: 600, height: 600}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-6.jpg" | resize({width: 1260, height: 800}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-6.jpg" | resize({width: 1260, height: 800}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-6.jpg" | resize({width: 1260, height: 800}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/gal-6.jpg" | resize({width: 1260, height: 800}) | jpeg %}" alt="restaurant image" width="630" height="400" loading="lazy" decoding="async" >
+            </picture>
+        </div>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-1109">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">FAQ’s</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <picture class="cs-picture">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pad-thai.jpg" | resize({width: 576, height: 720}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pad-thai.jpg" | resize({width: 576, height: 720}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pad-thai.jpg" | resize({width: 576, height: 720}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pad-thai.jpg" | resize({width: 1168, height: 800}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pad-thai.jpg" | resize({width: 1168, height: 800}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pad-thai.jpg" | resize({width: 1168, height: 800}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pad-thai.jpg" | resize({width: 1024, height: 800}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pad-thai.jpg" | resize({width: 1024, height: 800}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pad-thai.jpg" | resize({width: 1024, height: 800}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/pad-thai.jpg" | resize({width: 1024, height: 800}) | jpeg %}" alt="pad thai noodles" width="522" height="400" loading="lazy" decoding="async">
+            </picture>
+        </div>
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What are your opening hours?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We welcome diners Monday from 5:00 pm to 10:30 pm, and Tuesday through Saturday from 12:00 pm to 2:30 pm for lunch and 5:00 pm to 10:30 pm for dinner. We are closed on Sunday.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How many people can your restaurant accommodate?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Our restaurant comfortably seats 60 guests. We offer private dining for special occasions, accommodating up to 30 seated guests in our dedicated space.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you have accessible facilities and where can I park?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Nur Nur Paradise has accessible toilet facilities. Convenient parking is available at nearby Abbey Fields Car Park and Square West Car Park.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How can I make a reservation?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        You can book by phone and via our online booking system. We recommend reservations, especially for weekend dining.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What payment methods do you accept?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We accept both cash and all major credit cards for your convenience.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+                                
+
+<script>
+    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+</script>
+                                
+                                
 
     {% include 'components/cta.html' %}
 {% endblock %}

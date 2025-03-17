@@ -1,7 +1,7 @@
 ---
-title: 'About | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+title: 'About | Nur Nur Paradise'
+description: "Discover the story behind Nur Nur Paradise, Kenilworth's premier Thai restaurant. Founded by Lee and Chantana, we bring authentic Thai flavours to Warwickshire."
+preloadImg: '/assets/images/banner.webp'
 permalink: 'about/'
 eleventyNavigation:
     key: About Us
@@ -20,56 +20,62 @@ eleventyNavigation:
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
+        <h1 id="home-h">Our Story</h1>
         <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+            <source media="(max-width: 600px)" srcset="/assets/images/banner-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/banner.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="restaurant banner" loading="eager" width="2500" height="1667">
         </picture>
-
     </section>
 
     <!-- ============================================ -->
     <!--                 Side By Side                 -->
     <!-- ============================================ -->
 
-    <section id="sbs">
+    <section id="sbs-867">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
+            <picture class="cs-picture">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 576, height: 800}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 576, height: 800}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 576, height: 800}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 1100, height: 1434}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 1100, height: 1434}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 1100, height: 1434}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 1260, height: 1550}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 1260, height: 1550}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/gal-2.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" alt="about us" width="630" height="775" loading="lazy" decoding="async">
+            </picture>
+            <div class="cs-content">
                 <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
+                <h2 class="cs-title">Behind The Flavours</h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Nur Nur Paradise opened its doors on November 10, 2023, bringing a unique Thai fusion dining experience to Kenilworth. Our menu artfully blends traditional Thai cuisine with Western influences, creating distinctive dishes that honor both culinary traditions.
                 </p>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                   Founded by Lee Wongsalees and Chantana Nimcean, our Warwick Road restaurant represents the realisation of a shared dream. After meeting in 2014 while working at a high street chain in Marlow, Buckinghamshire, we combined our extensive hospitality experience and passion for authentic Thai flavors to create something truly special.
                 </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
+                 <p class="cs-text">
+                   The journey to Nur Nur Paradise began in January 2023 when we first discussed opening our own restaurant. After exploring various locations across the region, we fell in love with Kenilworth's vibrant community atmosphere and thriving high street—the perfect setting for our culinary vision.
+                </p>
+                 <p class="cs-text">
+                   As natives of Thailand, we've created a warm, welcoming space where guests feel at home while enjoying exceptional fusion cuisine unavailable anywhere else in Kenilworth. 
+                </p>
+                <div id="quote-827">
+                    <span class="cs-quote-text">
+                        Our name 'Nur Nur' translates to 'delicious' in Thai—it's not just what we're called, it's what we promise with every dish we serve.
+                    </span>
+                    <span class="cs-name">Lee Wongsalees</span>
+                    <span class="cs-job">Owner</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote-white.svg" alt="gavel" width="136" height="77">
+                </div>            
             </div>
         </div>
     </section>
+                                
 
     {% include 'components/cta.html' %}
 

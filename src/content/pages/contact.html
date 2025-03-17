@@ -6,7 +6,7 @@ permalink: 'contact/'
 eleventyNavigation:
     key: Contact Us
     order: 600
-    hideOnDesktop: true
+
 ---
 
 {% extends "layouts/base.html" %}
@@ -23,77 +23,69 @@ eleventyNavigation:
 
     <section id="int-hero">
         <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+       <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/banner-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/banner.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="restaurant banner" loading="eager" width="2500" height="1667">
         </picture>
     </section>
 
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
 
-    <section id="cs-contact">
-        <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
-                </div>
-                <label>
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-2320">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Talk To Our Friendly Team</h2>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-323-2320" name="Contact Form" method="post">
+                <label class="cs-label">
                     Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
+                    <input class="cs-input" required type="text" name="name" placeholder="Name">
                 </label>
-                <label>
+                <label class="cs-label cs-email">
                     Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
+                    <input class="cs-input" required type="email" name="email" placeholder="Email">
                 </label>
-                <label>
+                <label class="cs-label cs-phone">
                     Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
+                    <input class="cs-input" required type="tel" name="phone" placeholder="Phone">
                 </label>
-                <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
+                <label class="cs-label cs-services">
+                    Enquiry Type
+                    <select class="cs-input" name="Services">
+                        <option value="" disabled selected>Select</option>
+                        <option value="Party">Party</option>
+                        <option value="Event">Event</option>
+                        <option value="General">General</option>
+                    </select>
                 </label>
-                <label class="cs-label-message">
+                <label class="cs-label">
                     Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+                    <textarea class="cs-input cs-textarea" required name="Message" placeholder="Write message..."></textarea>
                 </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
+                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
             </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br/>
-                    {{client.address.lineTwo}},
-                    <br/>
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
+        </div>
+        <!--Map Image, pin is made in the Figma then export as one image-->
+        <div class="cs-map">
+            <div class="cs-iframe-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.5502646767504!2d-1.5812859222530196!3d52.34230447201514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870cbb67be9c027%3A0xcd7d89994cca28d9!2sNur%20Nur%20Paradise!5e0!3m2!1sen!2suk!4v1741509799565!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="cs-box">
+                <img class="cs-icon" decoding="async" loading="lazy" src="/assets/svgs/clock.svg" alt="icon" width="40" height="40" aria-hidden="true">
+                <div class="cs-flex">
+                    <span class="cs-header">Opening Hours</span>
+
+                    <span class="cs-address"> Mon: 5pm-10.30pm <br> Tue-Sat: 12pm-2.30pm | 5pm-10.30pm <br> Sun: Closed
                     </span>
-                </a>
-
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
-                </picture>
-
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+                                
 {% endblock %}
