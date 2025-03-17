@@ -163,7 +163,7 @@
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2');
+    src: url('/assets/fonts/lato-v24-latin-regular.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* lato-700 - latin */
@@ -173,7 +173,7 @@
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2');
+    src: url('/assets/fonts/lato-v24-latin-700.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* lato-900 - latin */
@@ -183,7 +183,7 @@
     font-family: 'Lato';
     font-style: normal;
     font-weight: 900;
-    src: url('../fonts/lato-v24-latin-900.woff2') format('woff2');
+    src: url('/assets/fonts/lato-v24-latin-900.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   /* yellowtail-regular - latin */
@@ -210,6 +210,67 @@
   body,
   html {
     font-size: 0.85vw;
+  }
+}
+/*-- -------------------------- -->
+<---      Dark Mode Toggle      -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #dark-mode-toggle .cs-sun {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  body.dark-mode #dark-mode-toggle .cs-moon {
+    transform: translate(-50%, -150%);
+    opacity: 0;
+  }
+  #dark-mode-toggle {
+    display: block;
+    position: absolute;
+    bottom: 1.25rem;
+    right: 5.625rem;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    padding: 0;
+    z-index: 1000;
+  }
+  #dark-mode-toggle img,
+  #dark-mode-toggle svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    pointer-events: none;
+  }
+  #dark-mode-toggle .cs-moon {
+    z-index: 2;
+    transition: transform 0.3s, opacity 0.3s;
+    fill: #fff;
+  }
+  #dark-mode-toggle .cs-sun {
+    z-index: 1;
+    transform: translate(-50%, 100%);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #dark-mode-toggle {
+    position: relative;
+    transform: none;
+    bottom: auto;
+    right: auto;
+    margin: 0;
+  }
+  #dark-mode-toggle:hover {
+    cursor: pointer;
   }
 }
 /*-- -------------------------- -->
