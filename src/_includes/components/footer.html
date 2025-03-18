@@ -1,70 +1,99 @@
+
 <!-- ============================================ -->
 <!--                   Footer                     -->
 <!-- ============================================ -->
 
-<footer id="footer">
-    <div class="container">
-        <div class="left-section">
-            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/svgs/logo-full.svg" alt="logo" width="264" height="264"></a>
-        </div>
-        <div class="right-section">
-            <div class="lists">
-                <ul>
-                    <li>
-                        <h2>Menus</h2>
-                    </li>
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/about/">About Us</a>
-                    </li>
-                    <li>
-                        <a href="/reviews/">Reviews</a>
-                    </li>
-                    <li>
-                        <a href="/contact/">Contact</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h2>Opening Hours</h2>
-                    </li>
-                    <li>
-                         <a href="/contact/">
-                            Mon: 5pm-10.30pm<br>
+<footer id="cs-footer-710">
+    <div class="cs-container">
+        <!--Top Section-->
+        <div class="cs-top">
+            <!--Wrapped logo in wrapper div-->
+            <div class="cs-logo-wrapper">
+                <a href="/" class="cs-logo" aria-label="back to home" >
+                    <img src="/assets/svgs/logo-full.svg" alt="logo" aria-hidden="true" loading="lazy" decoding="async" width="210" height="80">
+                </a>
+            </div>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <span class="cs-header">Links</span>
+                </li>
+                <li class="cs-li">
+                    <a href="/" class="cs-link">Home</a>
+                </li>
+                 <li class="cs-li">
+                    <a href="/about/" class="cs-link">About Us</a>
+                </li>
+                 <li class="cs-li">
+                    <a href="/reviews/" class="cs-link">Reviews</a>
+                </li>
+                 <li class="cs-li">
+                    <a href="/contact/" class="cs-link">Contact</a>
+                </li>
+            </ul>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <span class="cs-header">Menus</span>
+                </li>
+                <li class="cs-li">
+                    <a href="/all-day-menu/" class="cs-link">All Day</a>
+                </li>
+                <li class="cs-li">
+                    <a href="/" class="cs-link">Lunch</a>
+                </li>
+            </ul>
+            <ul class="cs-ul cs-contact-ul">
+                <li class="cs-li">
+                    <span class="cs-header">Contact</span>
+                </li>
+                <li class="cs-li">
+                    <a href="tel:{{client.phoneForTel}}" class="cs-link">
+                        <img class="cs-icon" src="/assets/svgs/phone-w.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                        {{client.phoneFormatted}}
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a href="/contact/" class="cs-link">
+                        <img class="cs-icon" src="/assets/svgs/clock-w.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                        Mon: 5pm-10.30pm<br>
                             Tue-Sat: 12pm-2.30pm<br> 
                             / 5pm-10.30pm<br>
                             Sun: Closed
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h2>Contact</h2>
-                    </li>
-                    <li>
-                        <a href="{{client.address.mapLink}}" target="_blank" rel="noopener">
-                            {{client.address.lineOne}}<br>
-                            {{client.address.lineTwo}}<br>
-                            {{client.address.city}}
-                            {{client.address.zip}}
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:{{client.phoneForTel}}">
-                            T:
-                            {{client.phoneFormatted}}
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link" target="_blank" rel="noopener">
+                        <img class="cs-icon" src="/assets/svgs/pin-w.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                        {{client.address.lineOne}}<br>
+                        {{client.address.lineTwo}}<br>
+                        {{client.address.city}} {{client.address.zip}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--Middle Section-->
+        <div class="cs-middle">
+            <!--Navigation-->
+            <!--Social-->
+            <ul class="cs-social">
+                <li class="cs-social-li">
+                    <a href="{{client.socials.whatsapp}}" class="cs-social-link" aria-label="Visit Whatsapp" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="/assets/svgs/whatsapp-g.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="{{client.socials.facebook}}" class="cs-social-link" aria-label="Visit Facebook" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="/assets/svgs/facebook.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--Bottom Section-->
+        <div class="cs-bottom">
+            <span class="cs-copyright">
+              Designed and Hand Coded by <a href="https://splendidsites.com/" class="cs-copyright-link" target="_blank" rel="noopener">Splendid Sites</a> © Copyright {% year %}
+            </span>
         </div>
     </div>
-
-    <div class="credit">
-        <span>Designed by</span>
-        <a href="https://splendidsites.com/" target="_blank" rel="noopener">Splendid Sites</a>
-        <span class="copyright"> © {% year %} </span>
-    </div>
+    <!--SVG Waves-->
+    <img class="cs-graphic" src="/assets/svgs/waves.svg" alt="waves" aria-hidden="true" loading="lazy" decoding="async" width="1920" height="616">
 </footer>
