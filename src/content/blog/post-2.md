@@ -1,13 +1,13 @@
 ---
 title: Sucos Creati
-url: sucos-creati
+url: post-2
 description: Lorem markdownum Talia. Carinae equis.
-author: Code Stitch
-date: 2023-06-08T15:27:34.591Z
+author: Nur Nur Paradise
+date: 2025-03-03T15:27:34.591Z
 tags:
     - post
-image: /assets/images/blog/landing.jpg
-imageAlt: Kitchen
+image: /assets/images/blog/post-2.jpg
+imageAlt: restaurant
 ---
 
 ## Hospes meus

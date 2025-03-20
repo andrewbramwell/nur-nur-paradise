@@ -1,14 +1,14 @@
 ---
 title: Canitiem Saxa
-url: canitiem-saxa
+url: post-1
 description: Lorem markdownum trabeati dicere deus.
-author: Code Stitch
-date: 2023-06-08T15:28:08.486Z
+author: Nur Nur Paradise
+date: 2025-03-08T15:28:08.486Z
 tags:
     - post
     - featured
-image: /assets/images/blog/landing.jpg
-imageAlt: Kitchen
+image: /assets/images/blog/post-1.jpg
+imageAlt: restaurant
 ---
 
 ## Aut inter Petraeum

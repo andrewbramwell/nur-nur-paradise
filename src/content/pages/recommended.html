@@ -1,0 +1,617 @@
+---
+title: 'Recommended | Nur Nur Paradise'
+description: "Discover the story behind Nur Nur Paradise, Kenilworth's premier Thai restaurant. Founded by Lee and Chantana, we bring authentic Thai flavours to Warwickshire."
+preloadImg: '/assets/images/banner.webp'
+permalink: 'recommended/'
+eleventyNavigation:
+    key: Recommended
+    order: 3200
+    parent: Menus
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/menu.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Chef Recommended</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/banner-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/banner.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="restaurant banner" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+<!-- ============================================ -->
+<!--                  Collection                  -->
+<!-- ============================================ -->
+
+<!--
+    To add a 4th or 5th collection or more, copy and paste the cs-button and change it's data-filter to the next number, in this case it's 4. Do the same to the cs-listing and its data-category number. And that's it!
+-->
+
+<section id="collection-1602">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Chef Recommended</h2>
+        </div>
+        <div class="cs-listing-wrapper">
+            <!--Listing 1-->
+            <div class="cs-listing" data-category="one">
+                <!-- New Dish -->
+                    <div class="cs-item">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr1.jpg" | resize({width: 560, height: 660}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr1.jpg" | resize({width: 560, height: 660}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr1.jpg" | resize({width: 560, height: 660}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr1.jpg" | resize({width: 570, height: 472}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr1.jpg" | resize({width: 570, height: 472}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr1.jpg" | resize({width: 570, height: 472}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr1.jpg" | resize({width: 760, height: 640}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr1.jpg" | resize({width: 760, height: 640}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr1.jpg" | resize({width: 760, height: 640}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/cr1.jpg" | resize({width: 760, height: 640}) | jpeg %}" alt="Seafood Zaap Zaap" width="380" height="320" loading="lazy" decoding="async">
+                            </picture>
+                            
+                            <span class="cs-offer">-10% for Members</span>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Seafood Zaap Zaap</h3>
+                            <span class="cs-category">A traditional Thai favorite featuring a rich, creamy Tom Yum sauce with its distinctive aromatic broth. This fragrant dish is infused with lemongrass, kaffir lime leaves, and galangal, creating a perfect balance of zesty citrus notes and complex herbal flavors.</span>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">£23.95</span>
+                                    <div class="cs-stars">
+                                        <img class="cs-star"
+                                                src="/assets/svgs/chilli.svg"
+                                                alt="chilli" height="24" width="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <!-- Allergen Button (Replaced Buy Button) -->
+                                <button class="cs-buy cs-allergen-btn" aria-label="View allergen information">
+                                    <img class="cs-allergen-icon"
+                                            src="/assets/svgs/allergen-icon.svg"
+                                            alt="allergen info" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    <!-- Allergen Popup (Hidden by default) -->
+                    <div class="cs-allergen-popup">
+                        <div class="cs-allergen-container">
+                            <div class="cs-allergen-header">
+                                <h4>Allergen Information</h4>
+                                <button class="cs-allergen-close" aria-label="Close allergen information">✕</button>
+                            </div>
+                            <div class="cs-allergen-content">
+                                <p class="cs-allergen-title">Contains:</p>
+                                <div class="cs-allergen-tags">
+                                   <span class="cs-allergen-tag cs-allergen-crustaceans">Crustaceans</span>
+                                   <span class="cs-allergen-tag cs-allergen-eggs">Eggs</span>
+                                   <span class="cs-allergen-tag cs-allergen-fish">Fish</span>
+                                   <span class="cs-allergen-tag cs-allergen-milk">Milk</span>
+                                   <span class="cs-allergen-tag cs-allergen-nuts">Nuts</span>
+                                </div>
+                                <div class="cs-allergen-notice">
+                                    <p>Our kitchen handles all common allergens. While we take precautions to avoid cross-contamination, we cannot guarantee that any menu item is completely free from allergens.</p>
+                                    <p>Please inform your server of any allergies or dietary restrictions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- New Dish -->
+                <!-- New Dish -->
+                    <div class="cs-item">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr2.jpg" | resize({width: 560, height: 660}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr2.jpg" | resize({width: 560, height: 660}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr2.jpg" | resize({width: 560, height: 660}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr2.jpg" | resize({width: 570, height: 472}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr2.jpg" | resize({width: 570, height: 472}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr2.jpg" | resize({width: 570, height: 472}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr2.jpg" | resize({width: 760, height: 640}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr2.jpg" | resize({width: 760, height: 640}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr2.jpg" | resize({width: 760, height: 640}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/cr2.jpg" | resize({width: 760, height: 640}) | jpeg %}" alt="Chili Basil Lamb Cutlet" width="380" height="320" loading="lazy" decoding="async">
+                            </picture>
+                            
+                            <span class="cs-offer">-10% for Members</span>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Chili Basil Lamb Cutlet</h3>
+                            <span class="cs-category">Thai Basil Lamb Cutlet - marinated racks of lamb in soy sauce and Thai seasoning sauce and charred on the grill to perfection! It's then tossed in a tingly, tangy sauce and Thai basil.</span>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">£23.95</span>
+                                    <div class="cs-stars">
+                                        <img class="cs-star"
+                                                src="/assets/svgs/chilli.svg"
+                                                alt="chilli" height="24" width="24" loading="lazy" decoding="async">
+                                        <img class="cs-star"
+                                                src="/assets/svgs/chilli.svg"
+                                                alt="chilli" height="24" width="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <!-- Allergen Button (Replaced Buy Button) -->
+                                <button class="cs-buy cs-allergen-btn" aria-label="View allergen information">
+                                    <img class="cs-allergen-icon"
+                                            src="/assets/svgs/allergen-icon.svg"
+                                            alt="allergen info" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    <!-- Allergen Popup (Hidden by default) -->
+                    <div class="cs-allergen-popup">
+                        <div class="cs-allergen-container">
+                            <div class="cs-allergen-header">
+                                <h4>Allergen Information</h4>
+                                <button class="cs-allergen-close" aria-label="Close allergen information">✕</button>
+                            </div>
+                            <div class="cs-allergen-content">
+                                <p class="cs-allergen-title">Contains:</p>
+                                <div class="cs-allergen-tags">
+                                   <span class="cs-allergen-tag cs-allergen-celery">Celery</span>
+                                   <span class="cs-allergen-tag cs-allergen-eggs">Eggs</span>
+                                   <span class="cs-allergen-tag cs-allergen-molluscs">Molluscs</span>
+                                   <span class="cs-allergen-tag cs-allergen-soya">Soya</span>
+                                </div>
+                                <div class="cs-allergen-notice">
+                                    <p>Our kitchen handles all common allergens. While we take precautions to avoid cross-contamination, we cannot guarantee that any menu item is completely free from allergens.</p>
+                                    <p>Please inform your server of any allergies or dietary restrictions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Dish -->
+                <div class="cs-item">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr3.jpg" | resize({width: 560, height: 660}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr3.jpg" | resize({width: 560, height: 660}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr3.jpg" | resize({width: 560, height: 660}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr3.jpg" | resize({width: 570, height: 472}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr3.jpg" | resize({width: 570, height: 472}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr3.jpg" | resize({width: 570, height: 472}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr3.jpg" | resize({width: 760, height: 640}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr3.jpg" | resize({width: 760, height: 640}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr3.jpg" | resize({width: 760, height: 640}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/cr3.jpg" | resize({width: 760, height: 640}) | jpeg %}" alt="Slow Cook Lamb Shank Massaman" width="380" height="320" loading="lazy" decoding="async">
+                            </picture>
+                            
+                            <span class="cs-offer">-10% for Members</span>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Slow Cook Lamb Shank- Massaman</h3>
+                            <span class="cs-category">Lamb Massaman curry is a truly luxurious dish. Lamb Shanks cooked in a Massaman sauce become meltingly tender and the spices blend so harmoniously with the lamb.</span>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">£20.95</span>
+                                    <div class="cs-stars">
+                                        <!-- No chilli SVG as spice level is 0 -->
+                                    </div>
+                                </div>
+                                <!-- Allergen Button (Replaced Buy Button) -->
+                                <button class="cs-buy cs-allergen-btn" aria-label="View allergen information">
+                                    <img class="cs-allergen-icon"
+                                            src="/assets/svgs/allergen-icon.svg"
+                                            alt="allergen info" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    <!-- Allergen Popup (Hidden by default) -->
+                    <div class="cs-allergen-popup">
+                        <div class="cs-allergen-container">
+                            <div class="cs-allergen-header">
+                                <h4>Allergen Information</h4>
+                                <button class="cs-allergen-close" aria-label="Close allergen information">✕</button>
+                            </div>
+                            <div class="cs-allergen-content">
+                                <p class="cs-allergen-title">Contains:</p>
+                                <div class="cs-allergen-tags">
+                                   <span class="cs-allergen-tag cs-allergen-eggs">Eggs</span>
+                                   <span class="cs-allergen-tag cs-allergen-fish">Fish</span>
+                                   <span class="cs-allergen-tag cs-allergen-nuts">Nuts</span>
+                                </div>
+                                <div class="cs-allergen-notice">
+                                    <p>Our kitchen handles all common allergens. While we take precautions to avoid cross-contamination, we cannot guarantee that any menu item is completely free from allergens.</p>
+                                    <p>Please inform your server of any allergies or dietary restrictions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <!-- New Dish -->
+            <div class="cs-item">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr4.jpg" | resize({width: 560, height: 660}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr4.jpg" | resize({width: 560, height: 660}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr4.jpg" | resize({width: 560, height: 660}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr4.jpg" | resize({width: 570, height: 472}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr4.jpg" | resize({width: 570, height: 472}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr4.jpg" | resize({width: 570, height: 472}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr4.jpg" | resize({width: 760, height: 640}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr4.jpg" | resize({width: 760, height: 640}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr4.jpg" | resize({width: 760, height: 640}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/cr4.jpg" | resize({width: 760, height: 640}) | jpeg %}" alt="Grilled Whole Sea Bass" width="380" height="320" loading="lazy" decoding="async">
+                            </picture>
+                            
+                            <span class="cs-offer">-10% for Members</span>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Grilled Whole Sea Bass</h3>
+                            <span class="cs-category">Whole Sea bass is briefly marinated in soy sauce, lime juice, Lemongrass,kafir lime, oyster sauce. then grilled until flaky for an incredibly tender.</span>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">£23.95</span>
+                                    <div class="cs-stars">
+                                        <!-- No chilli SVG as spice level is 0 -->
+                                    </div>
+                                </div>
+                                <!-- Allergen Button (Replaced Buy Button) -->
+                                <button class="cs-buy cs-allergen-btn" aria-label="View allergen information">
+                                    <img class="cs-allergen-icon"
+                                            src="/assets/svgs/allergen-icon.svg"
+                                            alt="allergen info" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    <!-- Allergen Popup (Hidden by default) -->
+                    <div class="cs-allergen-popup">
+                        <div class="cs-allergen-container">
+                            <div class="cs-allergen-header">
+                                <h4>Allergen Information</h4>
+                                <button class="cs-allergen-close" aria-label="Close allergen information">✕</button>
+                            </div>
+                            <div class="cs-allergen-content">
+                                <p class="cs-allergen-title">Contains:</p>
+                                <div class="cs-allergen-tags">
+                                   <span class="cs-allergen-tag cs-allergen-celery">Celery</span>
+                                   <span class="cs-allergen-tag cs-allergen-eggs">Eggs</span>
+                                   <span class="cs-allergen-tag cs-allergen-milk">Milk</span>
+                                   <span class="cs-allergen-tag cs-allergen-soya">Soya</span>
+                                </div>
+                                <div class="cs-allergen-notice">
+                                    <p>Our kitchen handles all common allergens. While we take precautions to avoid cross-contamination, we cannot guarantee that any menu item is completely free from allergens.</p>
+                                    <p>Please inform your server of any allergies or dietary restrictions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Dish -->
+                <div class="cs-item">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr5.jpg" | resize({width: 560, height: 660}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr5.jpg" | resize({width: 560, height: 660}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr5.jpg" | resize({width: 560, height: 660}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr5.jpg" | resize({width: 570, height: 472}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr5.jpg" | resize({width: 570, height: 472}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr5.jpg" | resize({width: 570, height: 472}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr5.jpg" | resize({width: 760, height: 640}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr5.jpg" | resize({width: 760, height: 640}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr5.jpg" | resize({width: 760, height: 640}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/cr5.jpg" | resize({width: 760, height: 640}) | jpeg %}" alt="Thai Style Cod Loin Panang Curry" width="380" height="320" loading="lazy" decoding="async">
+                            </picture>
+                            
+                            <span class="cs-offer">-10% for Members</span>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Thai Style Cod Loin Panang Curry</h3>
+                            <span class="cs-category">Panang Curry, with its savoury blend of shrimp paste, Thai chilies, and aromatics such as lemongrass, kaffir lime, and galangal are heavenly when paired with Cod lion. Cod is a very pleasant fish with a slightly sweet, mild clean taste and a lean flaky texture.</span>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">£20.95</span>
+                                    <div class="cs-stars">
+                                        <img class="cs-star"
+                                                src="/assets/svgs/chilli.svg"
+                                                alt="chilli" height="24" width="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <!-- Allergen Button (Replaced Buy Button) -->
+                                <button class="cs-buy cs-allergen-btn" aria-label="View allergen information">
+                                    <img class="cs-allergen-icon"
+                                            src="/assets/svgs/allergen-icon.svg"
+                                            alt="allergen info" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    <!-- Allergen Popup (Hidden by default) -->
+                    <div class="cs-allergen-popup">
+                        <div class="cs-allergen-container">
+                            <div class="cs-allergen-header">
+                                <h4>Allergen Information</h4>
+                                <button class="cs-allergen-close" aria-label="Close allergen information">✕</button>
+                            </div>
+                            <div class="cs-allergen-content">
+                                <p class="cs-allergen-title">Contains:</p>
+                                <div class="cs-allergen-tags">
+                                   <span class="cs-allergen-tag cs-allergen-crustaceans">Crustaceans</span>
+                                   <span class="cs-allergen-tag cs-allergen-eggs">Eggs</span>
+                                   <span class="cs-allergen-tag cs-allergen-fish">Fish</span>
+                                   <span class="cs-allergen-tag cs-allergen-milk">Milk</span>
+                                </div>
+                                <div class="cs-allergen-notice">
+                                    <p>Our kitchen handles all common allergens. While we take precautions to avoid cross-contamination, we cannot guarantee that any menu item is completely free from allergens.</p>
+                                    <p>Please inform your server of any allergies or dietary restrictions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Dish -->
+                <div class="cs-item">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr6.jpg" | resize({width: 560, height: 660}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr6.jpg" | resize({width: 560, height: 660}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr6.jpg" | resize({width: 560, height: 660}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr6.jpg" | resize({width: 570, height: 472}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr6.jpg" | resize({width: 570, height: 472}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr6.jpg" | resize({width: 570, height: 472}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr6.jpg" | resize({width: 760, height: 640}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr6.jpg" | resize({width: 760, height: 640}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr6.jpg" | resize({width: 760, height: 640}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/cr6.jpg" | resize({width: 760, height: 640}) | jpeg %}" alt="Slow Cook Beef Thai Red Curry" width="380" height="320" loading="lazy" decoding="async">
+                            </picture>
+                            
+                            <span class="cs-offer">-10% for Members</span>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Slow Cook Beef Thai Red Curry</h3>
+                            <span class="cs-category">This rich and mild red curry is a great way to use cuts of beef. Slow cooking for two hours gives the meat a soft and melting texture and the sauce is thick and full of flavour.</span>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">£20.95</span>
+                                    <div class="cs-stars">
+                                        <img class="cs-star"
+                                                src="/assets/svgs/chilli.svg"
+                                                alt="chilli" height="24" width="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <!-- Allergen Button (Replaced Buy Button) -->
+                                <button class="cs-buy cs-allergen-btn" aria-label="View allergen information">
+                                    <img class="cs-allergen-icon"
+                                            src="/assets/svgs/allergen-icon.svg"
+                                            alt="allergen info" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    <!-- Allergen Popup (Hidden by default) -->
+                    <div class="cs-allergen-popup">
+                        <div class="cs-allergen-container">
+                            <div class="cs-allergen-header">
+                                <h4>Allergen Information</h4>
+                                <button class="cs-allergen-close" aria-label="Close allergen information">✕</button>
+                            </div>
+                            <div class="cs-allergen-content">
+                                <p class="cs-allergen-title">Contains:</p>
+                                <div class="cs-allergen-tags">
+                                   <span class="cs-allergen-tag cs-allergen-celery">Celery</span>
+                                   <span class="cs-allergen-tag cs-allergen-eggs">Eggs</span>
+                                   <span class="cs-allergen-tag cs-allergen-molluscs">Molluscs</span>
+                                   <span class="cs-allergen-tag cs-allergen-nuts">Nuts</span>
+                                   <span class="cs-allergen-tag cs-allergen-soya">Soya</span>
+                                </div>
+                                <div class="cs-allergen-notice">
+                                    <p>Our kitchen handles all common allergens. While we take precautions to avoid cross-contamination, we cannot guarantee that any menu item is completely free from allergens.</p>
+                                    <p>Please inform your server of any allergies or dietary restrictions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Dish -->
+                <div class="cs-item">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr7.jpg" | resize({width: 560, height: 660}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr7.jpg" | resize({width: 560, height: 660}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr7.jpg" | resize({width: 560, height: 660}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr7.jpg" | resize({width: 570, height: 472}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr7.jpg" | resize({width: 570, height: 472}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr7.jpg" | resize({width: 570, height: 472}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr7.jpg" | resize({width: 760, height: 640}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr7.jpg" | resize({width: 760, height: 640}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr7.jpg" | resize({width: 760, height: 640}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/cr7.jpg" | resize({width: 760, height: 640}) | jpeg %}" alt="Grilled Chicken Breast Black Bean Chili" width="380" height="320" loading="lazy" decoding="async">
+                            </picture>
+                            
+                            <span class="cs-offer">-10% for Members</span>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Grilled Chicken Breast Black Bean Chili</h3>
+                            <span class="cs-category">Homemade easy Thai style stir-fried chicken in black bean sauce Juicy grilled tender chicken slices, peppers, onions, and savoury stir-fry sauce.</span>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">£18.95</span>
+                                    <div class="cs-stars">
+                                        <!-- No chilli SVG as spice level is 0 -->
+                                    </div>
+                                </div>
+                                <!-- Allergen Button (Replaced Buy Button) -->
+                                <button class="cs-buy cs-allergen-btn" aria-label="View allergen information">
+                                    <img class="cs-allergen-icon"
+                                            src="/assets/svgs/allergen-icon.svg"
+                                            alt="allergen info" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    <!-- Allergen Popup (Hidden by default) -->
+                    <div class="cs-allergen-popup">
+                        <div class="cs-allergen-container">
+                            <div class="cs-allergen-header">
+                                <h4>Allergen Information</h4>
+                                <button class="cs-allergen-close" aria-label="Close allergen information">✕</button>
+                            </div>
+                            <div class="cs-allergen-content">
+                                <p class="cs-allergen-title">Contains:</p>
+                                <div class="cs-allergen-tags">
+                                   <span class="cs-allergen-tag cs-allergen-crustaceans">Crustaceans</span>
+                                   <span class="cs-allergen-tag cs-allergen-eggs">Eggs</span>
+                                   <span class="cs-allergen-tag cs-allergen-molluscs">Molluscs</span>
+                                   <span class="cs-allergen-tag cs-allergen-nuts">Nuts</span>
+                                   <span class="cs-allergen-tag cs-allergen-soya">Soya</span>
+                                </div>
+                                <div class="cs-allergen-notice">
+                                    <p>Our kitchen handles all common allergens. While we take precautions to avoid cross-contamination, we cannot guarantee that any menu item is completely free from allergens.</p>
+                                    <p>Please inform your server of any allergies or dietary restrictions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Dish -->
+                <div class="cs-item">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr8.jpg" | resize({width: 560, height: 660}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr8.jpg" | resize({width: 560, height: 660}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cr8.jpg" | resize({width: 560, height: 660}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr8.jpg" | resize({width: 570, height: 472}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr8.jpg" | resize({width: 570, height: 472}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cr8.jpg" | resize({width: 570, height: 472}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr8.jpg" | resize({width: 760, height: 640}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr8.jpg" | resize({width: 760, height: 640}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cr8.jpg" | resize({width: 760, height: 640}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/cr8.jpg" | resize({width: 760, height: 640}) | jpeg %}" alt="Crispy & Crunchy Chicken Thai Herbs" width="380" height="320" loading="lazy" decoding="async">
+                            </picture>
+                            
+                            <span class="cs-offer">-10% for Members</span>
+                        </div>
+                        <div class="cs-details">
+                            <h3 class="cs-name">Crispy & Crunchy Chicken Thai Herbs</h3>
+                            <span class="cs-category">Chicken is marinated with spices and herbs and deep fried until golden brown and herbs become crispy. Eat like appetizer or eat with steamed rice is all delicious</span>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">£18.95</span>
+                                    <div class="cs-stars">
+                                        <!-- No chilli SVG as spice level is 0 -->
+                                    </div>
+                                </div>
+                                <!-- Allergen Button (Replaced Buy Button) -->
+                                <button class="cs-buy cs-allergen-btn" aria-label="View allergen information">
+                                    <img class="cs-allergen-icon"
+                                            src="/assets/svgs/allergen-icon.svg"
+                                            alt="allergen info" height="24" width="24" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    <!-- Allergen Popup (Hidden by default) -->
+                    <div class="cs-allergen-popup">
+                        <div class="cs-allergen-container">
+                            <div class="cs-allergen-header">
+                                <h4>Allergen Information</h4>
+                                <button class="cs-allergen-close" aria-label="Close allergen information">✕</button>
+                            </div>
+                            <div class="cs-allergen-content">
+                                <p class="cs-allergen-title">Contains:</p>
+                                <div class="cs-allergen-tags">
+                                   <span class="cs-allergen-tag cs-allergen-gluten">Gluten</span>
+                                   <span class="cs-allergen-tag cs-allergen-eggs">Eggs</span>
+                                </div>
+                                <div class="cs-allergen-notice">
+                                    <p>Our kitchen handles all common allergens. While we take precautions to avoid cross-contamination, we cannot guarantee that any menu item is completely free from allergens.</p>
+                                    <p>Please inform your server of any allergies or dietary restrictions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Find all allergen buttons
+    const allergenBtns = document.querySelectorAll('.cs-allergen-btn');
+    
+    allergenBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Find the parent item and toggle its popup
+            const item = this.closest('.cs-item');
+            const popup = item.querySelector('.cs-allergen-popup');
+            popup.classList.toggle('cs-active');
+        });
+    });
+    
+    // Close buttons
+    const closeBtns = document.querySelectorAll('.cs-allergen-close');
+    
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Find the parent popup and close it
+            const popup = this.closest('.cs-allergen-popup');
+            popup.classList.remove('cs-active');
+        });
+    });
+    
+    // Close popup when clicking outside
+    document.addEventListener('click', function(e) {
+        const popups = document.querySelectorAll('.cs-allergen-popup.cs-active');
+        
+        popups.forEach(popup => {
+            if (!popup.contains(e.target) && !e.target.classList.contains('cs-allergen-btn')) {
+                popup.classList.remove('cs-active');
+            }
+        });
+    });
+});
+</script>
+                                
+                                
+                                
+                                
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}
