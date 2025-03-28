@@ -1,8 +1,9 @@
 module.exports = {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
+    "name": "Nur Nur Paradise",
+    "email": "kenilworth@nurnurparadise.com",
     "phoneForTel": "+441926962804",
     "phoneFormatted": "01926 962804",
+    "onlineBooking": "https://nurnurparadise.resos.com/booking",
     "address": {
         "lineOne": "11 Warwick Rd",
         "lineTwo": "Kenilworth",
