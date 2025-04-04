@@ -6,7 +6,7 @@ author: Nur Nur Paradise
 date: 2025-03-03T15:27:34.591Z
 tags:
     - post
-image: /assets/images/blog/post-2.jpg
+image: /assets/images/lunch.webp
 imageAlt: restaurant
 ---
 
