@@ -32,7 +32,7 @@ Becoming a member is simple and completely free of charge. You have several conv
 - Speak with our staff during your next visit
 - Contact us directly on 01926 962804
 - Email us at kenilworth@nurnurparadise.com
-- Sign up on our website [click here](/)
+- Sign up on our website [click here](/membership)
 
 Upon registration, you will receive your unique membership code, which should be quoted when making reservations to ensure all applicable benefits are applied to your booking
 
