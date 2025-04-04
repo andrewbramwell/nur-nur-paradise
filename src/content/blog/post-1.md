@@ -7,7 +7,7 @@ date: 2025-03-08T15:28:08.486Z
 tags:
     - post
     - featured
-image: /assets/images/blog/post-1.jpg
+image: /assets/images/blog/post-2.webp
 imageAlt: restaurant
 ---
 
