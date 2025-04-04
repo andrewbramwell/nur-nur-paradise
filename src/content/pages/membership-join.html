@@ -1,0 +1,48 @@
+---
+title: 'Membership Join | Nur Nur Paradise'
+description: 'Find Nur Nur Paradise Thai restaurant in Kenilworth. Book a table, view our opening hours, or enquire about private dining and special occasions.'
+preloadImg: '/assets/images/banner.webp'
+permalink: 'membership-join/'
+eleventyNavigation:
+  
+
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/membership-join.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Thank You</h1>
+       <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/banner-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/banner.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="restaurant banner" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+<!-- ============================================ -->
+<!--                  Content                     -->
+<!-- ============================================ -->
+
+<section id="content-1450">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Membership</span>
+            <h2 class="cs-title">Thank You For Joining Nur Nur Paradise Membership Program</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl. Sed vitae nisl eget nisl aliquam aliquam. Sed vitae nisl eget nisl aliquam aliquam. Nullam auctor, nisl eget ultricies tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl. Sed vitae nisl eget nisl aliquam aliquam. Sed vitae nisl eget nisl aliquam aliquam. Nullam auctor, nisl eget ultricies tincidunt, nunc nisl aliquam nisl, eget aliquam nisl nisl eget nisl. Sed vitae nisl eget nisl aliquam aliquam.
+            </p>
+        </div>
+    </div>
+</section>
+                                
+{% endblock %}
